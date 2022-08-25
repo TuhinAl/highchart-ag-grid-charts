@@ -1,0 +1,8 @@
+<div class="panel panel-info">
+  <div class="panel-heading" (click)="opened = !opened">
+    {{title}}
+  </div>
+  <div class="panel-body" [ngClass]="{'hidden': !opened}">
+    <ng-content></ng-content>
+  </div>
+  </div>
